@@ -16,3 +16,6 @@ on:
         required: true
         # The data type of the input
         type: string
+jobs:
+    first_job:
+      runs-on: ubuntu-latest
