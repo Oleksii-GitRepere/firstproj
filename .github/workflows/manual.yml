@@ -19,3 +19,11 @@ on:
 jobs:
     first_job:
       runs-on: ubuntu-latest
+      
+      steps:
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'zulu'
