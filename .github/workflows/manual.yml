@@ -46,3 +46,4 @@ jobs:
           pwd
           cd firstproj
           pwd
+          cd firstproj
