@@ -40,4 +40,4 @@ jobs:
         run: "mvn -v"
         
       - name: Show folders
-        run: "ls"
+        run: "ls -a"
