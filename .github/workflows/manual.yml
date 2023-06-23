@@ -75,7 +75,3 @@ jobs:
           sudo apt install curl
           curl --version
           mvn -v
-      - name: Tomcat state
-        run: |
-            sleep 120s
-            curl localhost:8080/actuator/health
