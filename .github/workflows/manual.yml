@@ -49,7 +49,5 @@ jobs:
           pwd
           git clone https://github.com/Oleksii-GitRepere/firstproj.git
           pwd
-          cd ..
-          cd ..
-          cd ..
+          cd firstproj
           pwd
