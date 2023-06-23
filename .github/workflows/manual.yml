@@ -74,10 +74,12 @@ jobs:
           mvn -v
       - name: Tomcat state
         run: |
-          # Run the command and suppress the standard output:
-          systemctl status tomcat9.service > /dev/null 2>&1
-          # `$?` stores the exit code of the last command,
-          # which is what we want:
-          if [ $? -ne 0 ]; then
-          # Tomcat is down, do whatever.
-          fi
+            TOMCAT_PID=$(ps -ef | awk '/[t]omcat/{print $2}')
+            echo TOMCAT PROCESSID $TOMCAT_PID
+            if [ -z "$TOMCAT_PID" ]
+            then
+            echo "TOMCAT NOT RUNNING"
+            sudo /opt/tomcat/bin/startup.sh
+            else
+            echo "TOMCAT RUNNING"
+            fi
