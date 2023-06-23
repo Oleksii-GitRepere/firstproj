@@ -5,6 +5,7 @@ on:
       - main
       - jenk
   pull:
+    branches:
       - main
       - jenk
   workflow_dispatch:
