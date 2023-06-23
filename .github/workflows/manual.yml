@@ -57,3 +57,9 @@ jobs:
             mvn compile
             mvn package
             ls
+      - name: Start project
+        run: |
+            cd target
+            java -jar *.jar --server.port=8080
+            cd ..
+            curl -s 'http://localhost:8080/actuator/health'
