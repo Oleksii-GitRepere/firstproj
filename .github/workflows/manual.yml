@@ -1,9 +1,10 @@
 name: first_ci_cd
 on:
-  pull_request:[opened, reopened]
-    branches:
-      - main
-      - jenk
+  pull_request:
+    types: [opened, reopened]
+      branches:
+        - main
+        - jenk
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
