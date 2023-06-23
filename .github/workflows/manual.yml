@@ -62,13 +62,3 @@ jobs:
             cd target
             java -jar *.jar --server.port=8080
             cd ..
-    second_job:
-      runs-on: ubuntu-latest
-      steps:
-
-      - name: Run curl
-        run: |
-          sudo apt update && sudo apt upgrade
-          sudo apt install curl
-          curl --version
-          mvn -v
