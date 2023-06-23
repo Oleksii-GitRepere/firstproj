@@ -62,5 +62,9 @@ jobs:
             cd target
             java -jar *.jar --server.port=8080
             cd ..
+    second_job:
+      runs-on: ubuntu-latest
+      steps:
+
       - name: Run curl
         run: "curl -s 'http://localhost:8080/actuator/health'"
