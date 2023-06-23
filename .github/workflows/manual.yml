@@ -19,7 +19,7 @@ on:
 jobs:
     first_job:
       runs-on: ubuntu-latest
-      
+
       steps:
 
       - name: Set up JDK 17
@@ -27,3 +27,14 @@ jobs:
         with:
           java-version: '17'
           distribution: 'zulu'
+
+      - name: Show Java version
+        run: "java -version"
+
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.5
+        with:
+          maven-version: 3.8.8
+      
+      - name: Show Maven version
+        run: "mvn -v"
