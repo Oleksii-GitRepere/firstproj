@@ -38,3 +38,6 @@ jobs:
       
       - name: Show Maven version
         run: "mvn -v"
+        
+      - name: Show folders
+        run: "ls"
