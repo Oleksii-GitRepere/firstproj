@@ -43,4 +43,4 @@ jobs:
         run: "cd ~"
         
       - name: Show folders
-        run: "ls"
+        run: "pwd"
