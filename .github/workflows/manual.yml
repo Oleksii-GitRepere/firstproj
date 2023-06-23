@@ -74,6 +74,7 @@ jobs:
           mvn -v
       - name: Tomcat state
         run: |
+            sleep 120s
             curl -s 'http://localhost:8080/actuator/health'
 
       
