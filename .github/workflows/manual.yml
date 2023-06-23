@@ -39,5 +39,8 @@ jobs:
       - name: Show Maven version
         run: "mvn -v"
         
+      - name: Change folder
+        run: "cd ~"
+        
       - name: Show folders
-        run: "ls -a"
+        run: "ls"
