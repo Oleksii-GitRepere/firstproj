@@ -35,7 +35,7 @@ jobs:
           distribution: 'zulu'
 
       - name: Show Pull Message
-        run: "eho Pull message!!!"
+        run: "echo Pull message!!!"
 
       - name: Show Java version
         run: "java -version"
