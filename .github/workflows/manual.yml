@@ -40,12 +40,8 @@ jobs:
         run: "mvn -v"
         
       - name: Change folder
-        run: "cd /home"
-        
-      - name: Mkdir
-        run: "mkdir oleksii"
-        
-      - name: Show folders
-        run: "pwd"
-        
-        
+        run: |
+          pwd
+          mkdir oleksii
+          cd oleksii
+          pwd
