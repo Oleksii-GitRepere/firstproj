@@ -72,3 +72,12 @@ jobs:
           sudo apt install curl
           curl --version
           mvn -v
+      - name: Tomcat state
+        run: |
+          # Run the command and suppress the standard output:
+          systemctl status tomcat9.service > /dev/null 2>&1
+          # `$?` stores the exit code of the last command,
+          # which is what we want:
+          if [ $? -ne 0 ]; then
+          # Tomcat is down, do whatever.
+          fi
