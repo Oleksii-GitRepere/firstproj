@@ -29,9 +29,6 @@ jobs:
           java-version: '17'
           distribution: 'zulu'
 
-      - name: Show Pull Message
-        run: "echo Pull second message!!!!!"
-
       - name: Show Java version
         run: "java -version"
 
