@@ -39,8 +39,13 @@ jobs:
       - name: Show Maven version
         run: "mvn -v"
         
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        
       - name: Change folder
         run: |
           git
           pwd
-          git clone ssh://github.com/Oleksii-GitRepere/firstproj.git
+          git clone https://github.com/Oleksii-GitRepere/firstproj.git
