@@ -42,7 +42,5 @@ jobs:
       - name: Change folder
         run: |
           pwd
-          cd ..
-          pwd
-          rm -d firstproj
+          git clone https://github.com/Oleksii-GitRepere/firstproj.git
           pwd
