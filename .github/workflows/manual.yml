@@ -4,7 +4,9 @@ on:
     branches:
       - main
       - jenk
-  pull:
+  pull_request:
+    types:
+      - opened
     branches:
       - main
       - jenk
