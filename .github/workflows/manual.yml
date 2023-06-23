@@ -22,9 +22,6 @@ jobs:
 
       steps:
 
-      - name: Show Message
-        run: "echo First message after push"
-
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
