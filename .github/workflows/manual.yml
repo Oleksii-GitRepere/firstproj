@@ -50,4 +50,4 @@ jobs:
           git clone https://github.com/Oleksii-GitRepere/firstproj.git
           pwd
           cd firstproj
-          pwd
+          ls
