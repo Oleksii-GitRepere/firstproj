@@ -1,9 +1,9 @@
 name: first_ci_cd
 on:
-  push:
-    branches:
-      - main
-      - jenk
+	# push:
+	#   branches:
+ 	#     - main
+ 	#     - jenk
   pull_request:
     types:
       - opened
