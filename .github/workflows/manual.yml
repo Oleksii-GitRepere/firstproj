@@ -41,9 +41,11 @@ jobs:
         
       - name: Change folder
         run: |
+          git
           pwd
+          git --version
           git clone https://github.com/Oleksii-GitRepere/firstproj.git
           pwd
           cd firstproj
           pwd
-          cd firstproj
+          
