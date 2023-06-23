@@ -56,3 +56,4 @@ jobs:
         run: |
             mvn compile
             mvn package
+            ls
